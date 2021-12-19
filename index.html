@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script type='text/javascript' src='index.js'></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="bill">
+            <label>Bill</label>
+            <br>
+            <input type='text' id='billText' onchange="billChange()">
+        </div>
+        <div id="tipPercentage">
+            <label>Tip %</label>
+            <br>
+            <input type='text' id='tipPercentageText' onchange="tipPercentageChange()">
+        </div>
+        <div id="numberOfPeople">
+            <label>Number of people</label>
+            <br>
+            <input type='text' id='numberOfPeopleText' onchange="numberOfPeopleChange()">
+        </div>
+        <div id='round'>
+            <label>Round Up To Nearest Dollar</label>
+            <input type='checkbox' id='roundCheckBox' onclick="round()">
+        </div>
+        <div id="tip">
+            Tip: $0.00
+        </div>
+        <div id="total">
+            Total: <b>$0.00</b>
+        </div>
+    </div>
+</body>
+
+</html>
